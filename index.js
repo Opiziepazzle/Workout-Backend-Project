@@ -12,11 +12,6 @@ const bodyParser  = require('body-parser')
  require('dotenv').config();
  
 
- 
-
- //making upload folder publicly available and then passing the middleware
- //app.use('/uploads', express.static('uploads') )
-
 
  app.use(bodyParser.urlencoded({extended: false}))
  app.use(bodyParser.json());
